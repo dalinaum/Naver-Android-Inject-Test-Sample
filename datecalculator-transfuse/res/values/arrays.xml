@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="operationMenus">
+        <item >날짜 + 일수</item>
+        <item >날짜 - 일수</item>
+        <item >날짜 - 날짜</item>
+    </string-array>
+</resources>
