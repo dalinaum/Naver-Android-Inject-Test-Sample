@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Date Calculator</string>
+    <string name="title_operation_detail">Operation Detail</string>
+    <string name="gogo">Operation Detail</string>
+    <string name="gogo2">Operation Detail</string>
+    <string name="gogo4">Operation Detail</string>
+</resources>
