@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:focusable="true"
+	android:focusableInTouchMode="true">
+
+    <EditText
+        android:id="@+id/baseDateInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/operatorLabel"
+        style="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center|center_vertical"
+        android:textIsSelectable="false"
+         />
+
+    <EditText
+        android:id="@+id/daysInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:inputType="number"
+        android:hint="일수"
+         />
+    <Button
+        android:id="@+id/calcaulateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="=" />
+    <TextView
+        android:id="@+id/resultDateLabel"
+        style="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:textIsSelectable="true" />
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="일정 보내기" />
+</LinearLayout>
