@@ -4,8 +4,9 @@ import java.util.Calendar;
 import java.util.Date;
 
 import com.googlecode.androidannotations.annotations.EBean;
+import com.googlecode.androidannotations.api.Scope;
 
-@EBean
+@EBean(scope=Scope.Singleton)
 public class DateService {
 	private static final long milliSecondsInDays = 1000*60*60*24;
 

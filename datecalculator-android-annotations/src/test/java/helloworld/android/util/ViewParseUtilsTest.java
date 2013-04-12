@@ -30,10 +30,10 @@ public class ViewParseUtilsTest {
 	
 	@Test
 	public void validDate(){
-		input.setText("2013-03-12");
+		input.setText("2013-03-14");
 		Calendar parsed = ViewParseUtils.parseDate(input, format);
 		
-		assertDate(parsed, 2013, 3, 12);
+		assertDate(parsed, 2013, 3, 14);
 	}
 
 	@Test

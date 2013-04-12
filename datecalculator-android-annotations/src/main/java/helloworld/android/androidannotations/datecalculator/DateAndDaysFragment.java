@@ -15,9 +15,11 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.googlecode.androidannotations.annotations.AfterViews;
+import com.googlecode.androidannotations.annotations.Background;
 import com.googlecode.androidannotations.annotations.Bean;
 import com.googlecode.androidannotations.annotations.Click;
 import com.googlecode.androidannotations.annotations.EFragment;
+import com.googlecode.androidannotations.annotations.UiThread;
 import com.googlecode.androidannotations.annotations.ViewById;
 
 @EFragment(R.layout.fragment_date_and_day)
@@ -72,5 +74,6 @@ public class DateAndDaysFragment extends Fragment {
 		Date resultDate = service.plus(baseDate, days);
 		resultDateLabel.setText(dateFormat.format(resultDate));
 	}
+
 }
 

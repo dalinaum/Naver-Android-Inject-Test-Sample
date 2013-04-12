@@ -1,5 +1,6 @@
 package helloworld.android.androidannotations.datecalculator;
 
+import helloworld.android.androidannotations.datecalculator.service.DateService;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
@@ -7,6 +8,7 @@ import android.util.Log;
 import android.widget.ListView;
 
 import com.googlecode.androidannotations.annotations.AfterViews;
+import com.googlecode.androidannotations.annotations.Bean;
 import com.googlecode.androidannotations.annotations.EActivity;
 
 @EActivity(R.layout.activity_operation_menu)
@@ -14,7 +16,6 @@ public class CalculatorActivity extends FragmentActivity implements OperationLis
 	private static final String TAG = "CalculatorActivity";
 	private Fragment[] operFrags;
 	private int currentPosition = ListView.INVALID_POSITION;
-	
 	@AfterViews
 	protected void init() {
 		operFrags = new Fragment[]{ new DateAndDaysFragment_().setOperation(Operation.PLUS), 
